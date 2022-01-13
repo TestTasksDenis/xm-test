@@ -1,0 +1,41 @@
+.registration {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration__header {
+  margin-bottom: 20px;
+}
+
+.registration__content {
+  width: 35%;
+  border: 1px solid #e9e9ef;
+  border-radius: 0.25rem;
+  padding: 20px;
+}
+
+.registration__form-item {
+  margin-bottom: 20px;
+}
+
+.registration__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.registration__item {
+  margin-bottom: 20px;
+}
+
+.registration__item-message {
+  margin-top: 10px;
+  border-radius: 3px;
+  border: 1px solid #d63200;
+  padding: 0 10px;
+  line-height: 28px;
+  font: {
+    weight: bold;
+  };
+}

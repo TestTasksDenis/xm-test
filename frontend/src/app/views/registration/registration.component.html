@@ -1,0 +1,25 @@
+<div class="registration">
+  <div class="registration__content">
+    <header class="registration__header">
+      <h1 class="public-title">Sign up</h1>
+      <p>Feel free to register, or <a routerLink="/">Sign in</a></p>
+    </header>
+    <form *ngIf="form" [formGroup]="form" class="registration__form" (ngSubmit)="onSubmit()">
+      <div class="registration__item" *ngFor="let field of formFields">
+        <xm-input [label]="field.label" [formControlName]="field.name" [type]="field.type"></xm-input>
+        <div *ngIf="form.get(field.name)?.touched && form.get(field.name)?.invalid"
+             class="registration__item-message"
+        >
+          {{ field.validations | errorMessage: form.get(field.name)?.errors }}
+        </div>
+      </div>
+      <footer class="registration__footer">
+        <xm-btn-primary [isDisabled]="this.form.invalid || sendingData">Sign In</xm-btn-primary>
+      </footer>
+    </form>
+    <div *ngIf="testUser" class="registration__created-user">
+      <h3>Created User</h3>
+      <pre>{{ testUser | json }}</pre>
+    </div>
+  </div>
+</div>

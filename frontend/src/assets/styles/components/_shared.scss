@@ -1,0 +1,16 @@
+body {
+  font: {
+    family: var(--main-font), var(--default-fonts);
+    size: var(--default-font-size);
+  };
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+p {
+  line-height: 20px;
+}

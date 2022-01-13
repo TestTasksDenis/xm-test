@@ -1,0 +1,22 @@
+.btn {
+  height: 48px;
+  color: #ffffff;
+  background-color: #4F46E5;
+  border-radius: 50em;
+  padding: 0 25px;
+  font: {
+    size: 16px;
+    weight: bold;
+  };
+  transition: background-color 500ms ease-in-out;
+  min-width: 150px;
+
+  &:hover {
+    background-color: #000;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}

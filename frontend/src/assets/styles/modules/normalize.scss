@@ -1,0 +1,72 @@
+﻿@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*,
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+pre, code, kbd, samp {
+  font: {
+    family: var(--default-monospace-fonts);
+  };
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+button,
+select {
+  cursor: pointer;
+  user-select: none;
+  font: {
+    family: var(--main-font), var(--default-fonts);
+    size: var(--default-font-size);
+  };
+}
+
+blockquote,
+dl,
+dd,
+figure,
+input[type="checkbox"],
+input[type="radio"],
+p,
+pre,
+textarea {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}

@@ -1,0 +1,9 @@
+<button (click)="onClick()"
+        class="btn btn--primary"
+        [class.btn--rounded]="rounded"
+        [ngStyle]="styles"
+        [ngClass]="cssClasses"
+        [disabled]="isDisabled"
+>
+  <ng-content></ng-content>
+</button>

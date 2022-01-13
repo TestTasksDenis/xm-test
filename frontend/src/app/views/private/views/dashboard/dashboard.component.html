@@ -1,0 +1,11 @@
+<div class="dashboard">
+  <h1>Welcome to Whether Forecast</h1>
+  <div *ngIf="(weather$ | async) as whetherData" class="dashboard__data">
+    <div class="dashboard__item" *ngFor="let item of whetherData">
+      <h2>{{ item.summary }}</h2>
+      <h4>{{ item.date }}</h4>
+      <p><strong>Temperature C:</strong> {{ item.temperatureC }}</p>
+      <p><strong>Temperature F:</strong> {{ item.temperatureF }}</p>
+    </div>
+  </div>
+</div>

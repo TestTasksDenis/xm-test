@@ -1,0 +1,34 @@
+<section class="login">
+  <div class="login__left">
+    <div class="login__left-content">
+      <div class="login__logo">
+        <img src="/assets/images/logo.svg" alt="Logo">
+      </div>
+      <h3 class="public-title">Sign in</h3>
+      <p>Don't have an account? <a [routerLink]="['/registration']">Sign up</a></p>
+      <div class="login__note">
+        <p>For Demo use:<br><strong>Login</strong>: Guest, <strong>Password</strong>: Guest</p>
+      </div>
+      <form [formGroup]="form" class="login__form" (ngSubmit)="onSubmit()">
+        <div class="login__form-item">
+          <xm-input label="Email address" [isRequired]="true" formControlName="email"></xm-input>
+        </div>
+        <div class="login__form-item">
+          <xm-input label="Password" type="password" [isRequired]="true" formControlName="password"></xm-input>
+        </div>
+        <div *ngIf="showUnauthorizedMessage" class="login__alert">
+          Incorrect username or password.
+        </div>
+        <footer class="login__footer">
+          <xm-btn-primary [isDisabled]="form.invalid || sendingData">Login In</xm-btn-primary>
+        </footer>
+      </form>
+    </div>
+  </div>
+  <div class="login__right">
+    <div class="login__right-content">
+      <h1>Welcome to our community</h1>
+      <p class="login__desc">Fuse helps developers to build organized and well coded dashboards full of beautiful and rich modules. Join us and start building your application today.</p>
+    </div>
+  </div>
+</section>

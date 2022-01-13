@@ -1,0 +1,59 @@
+/* Embedded Fonts
+======================================================================================================================*/
+
+// Font Marking
+// 100: Thin, Hairline
+// 200: Extra Light, Ultra Light
+// 300: Light
+// 400: Normal
+// 500: Medium
+// 600: SemiBold
+// 700: Bold
+// 800: Extra Bold, Ultra Bold
+// 900: Black, Heavy
+
+$fontsFolder: "/assets/fonts";
+$font1: "Lato";
+
+$fonts:(
+  Lato-Light: ($font1, "#{$fontsFolder}/#{$font1}/Light/#{$font1}-Light", 300, normal),
+  Lato-Regular: ($font1, "#{$fontsFolder}/#{$font1}/Regular/#{$font1}-Regular", 400, normal),
+  Lato-Medium: ($font1, "#{$fontsFolder}/#{$font1}/Medium/#{$font1}-Medium", 500, normal),
+  Lato-Semibold: ($font1, "#{$fontsFolder}/#{$font1}/Semibold/#{$font1}-Semibold", 600, normal),
+  Lato-Bold: ($font1, "#{$fontsFolder}/#{$font1}/Bold/#{$font1}-Bold", 700, normal),
+  Lato-Italic: ($font1, "#{$fontsFolder}/#{$font1}/Italic/#{$font1}-Italic", 400, italic),
+  Lato-Heavy: ($font1, "#{$fontsFolder}/#{$font1}/Heavy/#{$font1}-Heavy", 900, normal),
+);
+
+/* Containers
+======================================================================================================================*/
+
+// eq. main: .container
+// eq. xl: .container--xl
+$containers: (
+  main: 1340px,
+  xl: 1440px,
+  lg: 1280px,
+  md: 980px,
+  sm: 768px,
+);
+
+/* Colors
+======================================================================================================================*/
+
+:root {
+  --body-color: #ffffff;
+  --text-color: #3F4254;
+  --link-color: #7C66F1;
+  --icon-color: #3f6ad8;
+}
+
+/* Fonts
+======================================================================================================================*/
+
+:root {
+  --main-font: "Lato";
+  --default-font-size: 14px;
+  --default-fonts: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --default-monospace-fonts: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

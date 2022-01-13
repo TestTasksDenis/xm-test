@@ -1,0 +1,22 @@
+<div class="input" [ngClass]="{ 'input--active': isActive, 'input--disabled': isDisabled }">
+  <label *ngIf="label" class="input__label" [for]="inputId">
+    <span class="input__label-text">{{ label }}</span>
+    <span *ngIf="isRequired" class="input__label-required">*</span>
+  </label>
+  <div class="input__item">
+    <input [id]="inputId"
+           [type]="type"
+           class="input__control"
+           [(ngModel)]="value"
+           [placeholder]="placeholder ? placeholder : ''"
+           [autocomplete]="autocomplete"
+           [disabled]="isDisabled"
+           [readonly]="readonly ? 'readonly' : null"
+           (focusin)="onFocusIn()"
+           (focusout)="onFocusOut()"
+    >
+    <button *ngIf="showEyeBtn" class="input__eye" type="button" (click)="changeType()">
+      <img src="./assets/icons/eye.svg" alt="Eye">
+    </button>
+  </div>
+</div>
