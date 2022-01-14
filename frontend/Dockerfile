@@ -14,4 +14,6 @@ RUN ng build --configuration development
 
 FROM nginx:1.17.1-alpine
 
+COPY nginx.conf /etc/nginx/conf.d/nginx.conf
+
 COPY --from=build /usr/src/app/dist/xm-test /usr/share/nginx/html
