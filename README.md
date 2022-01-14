@@ -20,3 +20,7 @@ dotnet dev-certs https --trust
 
 ### Swagger
 https://localhost:5000/swagger/index.html
+
+## Tests
+I wrote a couple of test witch you can run with command:
+- `ng test`
