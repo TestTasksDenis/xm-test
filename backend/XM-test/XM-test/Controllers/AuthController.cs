@@ -38,6 +38,8 @@ public class AuthController : Controller
     {
         if (dto.Email == "guest@gmail.com" && dto.Password == "guest")
         {
+            Thread.Sleep(2000);
+
             const string token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJmaXJzdF9uYW1lIjoiRGVuaXMiLCJsYXN0X25hbWUiOiJMdWJjaGVua28iLCJtaWRkbGVfbmFtZSI6IlZpa3Rvcm92aWNoIiwiZW1haWwiOiJyZXhhcjE5ODhAZ21haWwuY29tIiwicGhvbmVfbnVtYmVyIjoiMzgwOTE2MzQ2ODUyIiwicGFzc3dvcmQiOiJTZWNyZXRfd29yZCEifSwic2NvcGVzIjpbImRhc2hib2FyZCJdfQ.RBwnLWC0Kwo-gZROi7Ux5LBrs3SAZDJlh6umvHjOrk0";
             
             return Ok(new

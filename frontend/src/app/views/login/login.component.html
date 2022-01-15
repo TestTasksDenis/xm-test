@@ -9,7 +9,7 @@
       <div class="login__note">
         <p>For Demo use:<br><strong>Login</strong>: Guest, <strong>Password</strong>: Guest</p>
       </div>
-      <form [formGroup]="form" class="login__form" (ngSubmit)="onSubmit()">
+      <form [formGroup]="form" class="login__form">
         <div class="login__form-item">
           <xm-input label="Email address" [isRequired]="true" formControlName="email"></xm-input>
         </div>
@@ -20,7 +20,7 @@
           Incorrect username or password.
         </div>
         <footer class="login__footer">
-          <xm-btn-primary [isDisabled]="form.invalid || sendingData">Login In</xm-btn-primary>
+          <xm-btn-primary #loginBtn [isDisabled]="form.invalid || sendingData">Login In</xm-btn-primary>
         </footer>
       </form>
     </div>
