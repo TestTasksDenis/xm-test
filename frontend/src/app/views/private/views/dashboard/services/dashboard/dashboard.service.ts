@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Environment } from '../../../../../../tokens/environment.token';
-import { Observable } from 'rxjs';
-import { Whether } from '../../types/whethe.interface';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+import { Environment } from '../../../../../../tokens/environment.token';
+import { Whether } from '../../types/whether.interface';
 
 @Injectable({
   providedIn: 'root',

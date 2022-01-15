@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { PrivateRoutingModule } from './private-routing.module';
 import { PrivateComponent } from './private.component';
-import { HeaderComponent } from './views/components/header/header.component';
-import { FooterComponent } from './views/components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [

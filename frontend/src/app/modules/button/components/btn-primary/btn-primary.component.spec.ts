@@ -54,7 +54,7 @@ describe('PrimaryComponent', () => {
     expect(button).toBeNull();
   });
 
-  it(`should be rounded if input prop round = true`, () => {
+  it('should be rounded if input prop round = true', () => {
     component.rounded = true;
 
     fixture.detectChanges();

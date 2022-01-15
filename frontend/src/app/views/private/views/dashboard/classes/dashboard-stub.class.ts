@@ -1,4 +1,4 @@
-import { Whether } from '../types/whethe.interface';
+import { Whether } from '../types/whether.interface';
 import { Observable, of } from 'rxjs';
 
 export class DashboardStubClass {

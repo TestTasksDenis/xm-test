@@ -8,7 +8,7 @@ describe('TokenInterceptor', () => {
   beforeEach(() => TestBed.configureTestingModule({
     imports: [
       HttpClientTestingModule,
-      RouterTestingModule
+      RouterTestingModule,
     ],
     providers: [
       TokenInterceptor,

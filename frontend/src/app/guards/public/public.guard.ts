@@ -15,8 +15,6 @@ import { AuthService } from '../../services/auth/auth.service';
   providedIn: 'root',
 })
 export class PublicGuard implements CanActivate, CanLoad {
-  currentUser = this.authService.getCurrentUser();
-
   constructor(
     private readonly authService: AuthService,
     private readonly router: Router,
